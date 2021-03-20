@@ -52,20 +52,43 @@
   font-weight: 400;
   font-style: normal;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 .container {
-  width: 1920px;
+  width: 1280px;
   margin: 0 auto;
 }
 .header {
   min-height: 1024px;
-  background-color: black;
+  display: block;
+  background-image: url(../img/header_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header-top {
   width: 100%;
   display: flex;
 }
+.header-logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.header-logo:hover .header-logo-icon {
+  fill: brown;
+}
+.header-logo:hover .header-logo-txt {
+  color: brown;
+}
+.header-logo-icon {
+  fill: #fff;
+}
 .header-logo-txt {
-  font-family: "raleway";
+  font-family: 'raleway', sans-serif;
   font-size: 34px;
   line-height: 1.2;
   font-weight: 400;

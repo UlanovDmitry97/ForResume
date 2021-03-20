@@ -1,20 +1,43 @@
+body{
+  margin: 0;
+  padding: 0;
+}
 .container{
-  width: 1920px;
+  width: 1280px;
   margin: 0 auto;
 }
 .header{
   min-height: 1024px;
-  background-color: black;
-  
+  display: block;
+  background-image: url(../img/header_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
   &-top{
     width: 100%;
     display: flex;
   }
   
   &-logo{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+
+    &:hover .header-logo-icon{
+    fill: brown;
+    }
+
+    &:hover .header-logo-txt{
+    color: brown;
+    }
+
+    &-icon{
+      fill: #fff;
+    }
 
     &-txt{
-      font-family: "raleway";
+      font-family: 'raleway', sans-serif ;
       font-size: 34px;
       line-height: 1.2;
       font-weight: 400;
